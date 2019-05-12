@@ -6,25 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Friends Finder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/style.css" />
-    <script src="../../assets/survey.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <script src="../data/friends.js"></script>
 </head>
 
 <body>
     <div class="container">
+        <div class="row1">
         <h1>Survey</h1>
+        </div>
+        <div class="row2">
         <p>Take this compatibility quiz to find your next best buddy! Provide answers within 1 to 5 range, where 1 is completely
             disagree with the statement and 5 - absolutely agree. Answer honestly and may the Ross be with you.</p>
+            </div>
+            <div class="row3">
+                <div class="col-md-12">
         <form>
             <div class="form-group">
+                <p>But first enter your information below.</p>
+                <hr>
                 <input id="name" type="text" class="form-control" placeholder="Name (Required)">
             </div>
             <div class="form-group">
                 <input id="photo" type="text" class="form-control" placeholder="Link to Photo Image (Required)">
             </div>
+            <hr>
+            <br>
             <div class="form-group">
                 <label for="question1">
-                    Going on the first date to the archaelogical museum is a MUST.
+                    1. On the first date going to the archaelogical museum is a MUST.
                 </label>
                 <select class="form-control" id="question1">
                     <option value="empty"></option>
@@ -37,7 +50,7 @@
             </div>
             <div class="form-group">
                 <label for="question2">
-                    Sense of humor is the most important quality in a friend.
+                    2. Sense of humor is the most important quality in a friend.
                 </label>
                 <select class="form-control" id="question2">
                     <option value="empty"></option>
@@ -50,7 +63,7 @@
             </div>
             <div class="form-group">
                 <label for="question3">
-                    Mess everywhere is your biggest pet peeve.
+                    3. Mess everywhere is your biggest pet peeve.
                 </label>
                 <select class="form-control" id="question3">
                     <option value="empty"></option>
@@ -63,7 +76,7 @@
             </div>
             <div class="form-group">
                 <label for="question4">
-                    Your fashion sense is quirky and colorful.
+                    4. Your fashion sense is quirky and colorful.
                 </label>
                 <select class="form-control" id="question4">
                     <option value="empty"></option>
@@ -76,7 +89,7 @@
             </div>
             <div class="form-group">
                 <label for="question5">
-                    In high school you were the most popular kid.
+                    5. In high school you were the most popular kid.
                 </label>
                 <select class="form-control" id="question5">
                     <option value="empty"></option>
@@ -89,7 +102,7 @@
             </div>
             <div class="form-group">
                 <label for="question6">
-                    My dream job is something that will let me express my creativity.
+                    6. My dream job is something that will let me express my creativity.
                 </label>
                 <select class="form-control" id="question6">
                     <option value="empty"></option>
@@ -102,7 +115,7 @@
             </div>
             <div class="form-group">
                 <label for="question7">
-                    After living in the city you want to move to suburbs to enjoy quieter time.
+                    7. After living in the city you want to move to suburbs to enjoy quieter time.
                 </label>
                 <select class="form-control" id="question7">
                     <option value="empty"></option>
@@ -115,7 +128,7 @@
             </div>
             <div class="form-group">
                 <label for="question8">
-                    You are very competitive.
+                    8. You are very competitive.
                 </label>
                 <select class="form-control" id="question8">
                     <option value="empty"></option>
@@ -128,7 +141,7 @@
             </div>
             <div class="form-group">
                 <label for="question9">
-                    If you win in a lottery you would invest it all.
+                    9. If you win in a lottery you would invest it all.
                 </label>
                 <select class="form-control" id="question9">
                     <option value="empty"></option>
@@ -141,7 +154,7 @@
             </div>
             <div class="form-group">
                 <label for="question10">
-                    You are more logical than emotional.
+                    10. You are more logical than emotional.
                 </label>
                 <select class="form-control" id="question10">
                     <option value="empty"></option>
@@ -153,9 +166,14 @@
                 </select>
             </div>
         </form>
+        </div>
+        </div>
+        <!---Submit button section-->
         <div class="text-center">
             <button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
         </div>
+        <!--submit button section ends-->
+
         <!-- results-->
         <div id="bestFriendModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
