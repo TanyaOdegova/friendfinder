@@ -3,11 +3,13 @@
 body {
 	overflow-x: hidden;
 	font-family: 'Lato', sans-serif;
-    color: #505962;
+    color: black;
     width: 560px;
 	height: auto;	
 }
-/*--- Nav Scrolling Offset --*/
+h5 {
+	color: white;
+}
 .offset:before {
 	height: 62px;
 	margin-top: -62px;
@@ -29,16 +31,12 @@ body {
 		padding-bottom: 1.2rem;
 	}
 }
-.home-inner {
-    background-image: url("../images/landingpg3_Fotor.png");
-    width: 540px;;
-    height: auto;
-}
+
 .caption {
 	width: 100%;
 	max-width: 100%;
 	position: absolute;
-	top: 40%;
+	top: 20%;
 	z-index: 1;
 }
 .caption h3 {
@@ -99,10 +97,6 @@ hr.socket {
 	width: 100%;
 	border-top: .2rem solid white;
 }
-
-
-
-
 
 .btn {
 	margin: 30px;
