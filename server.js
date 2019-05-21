@@ -8,8 +8,8 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 // For serving of static CSS
-app.use(express.static(__dirname + "/app/css"));
 
+app.use('/static', express.static(path.join(__dirname, '/app/public')))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());

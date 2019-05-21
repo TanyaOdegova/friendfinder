@@ -19,8 +19,8 @@ module.exports = function(app) {
         for(var i=0; i < friends.length; i++) {
             var totalDifference = 0;
 
-        for(var i =0; j < friends[i].scores.length; j++) {
-            var difference = Mathabs(user.scores[j] - friends[i].scores[j]);
+        for(var j =0; j < friends[i].scores.length; j++) {
+            var difference = Math.abs(user.scores[j] - friends[i].scores[j]);
             totalDifference +=difference;
         }
         if(totalDifference < minimumDifference) {

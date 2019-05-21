@@ -1,5 +1,8 @@
 /* Homework requirement:application's data inside of app/data/friends.js as an array of objects. 
 Each of these objects should roughly follow the format below.*/
+// DATA
+// Below data will hold all of the reserved tables.
+
 var friends = [
     {
         name: "Ross",
@@ -32,5 +35,6 @@ var friends = [
         scores: [5,5,5,5,1,5,1,1,5,5]
     }
 ];
-
+// Module.Exports will export the array. 
+//This makes it accessible to other files using require.
 module.exports = friends;
