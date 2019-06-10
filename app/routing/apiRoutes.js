@@ -20,7 +20,7 @@ module.exports = function(app) {
             var totalDifference = 0;
 
         for(var j =0; j < friends[i].scores.length; j++) {
-            var difference = Math.labs(user.scores[j] - friends[i].scores[j]);
+            var difference = Math.abs(user.scores[j] - friends[i].scores[j]);
             totalDifference +=difference;
         }
         if(totalDifference < minimumDifference) {
